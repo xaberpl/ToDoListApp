@@ -9,10 +9,23 @@ function addToDo(event) {
 
   const toDoDiv = document.createElement("div");
   toDoDiv.classList.add("toDo");
-  document.body.appendChild(toDoDiv);
 
   const newToDo = document.createElement("li");
   newToDo.innerText = toDoInput.value;
   newToDo.classList.add("toDoItem");
   toDoDiv.appendChild(newToDo);
+
+  const completeButton = document.createElement("button");
+  completeButton.innerHTML = '<i class="fas fa-check"></i>';
+  completeButton.classList.add("completeButton");
+  toDoDiv.appendChild(completeButton);
+
+  const deleteButton = document.createElement("button");
+  deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
+  deleteButton.classList.add("deleteButton");
+  toDoDiv.appendChild(deleteButton);
+
+  toDoList.appendChild(toDoDiv);
+
+  toDoInput.value = "";
 }

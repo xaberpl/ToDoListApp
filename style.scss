@@ -36,3 +36,49 @@ form button:hover {
   background-color: white;
   color: #10122e;
 }
+
+.toDoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toDoList{
+    min-width: 30%;
+    list-style:none;
+}
+
+.toDo{
+    margin: 0.5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5 rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toDo li{
+    flex: 1;
+}
+
+.deleteButton, .completeButton{
+    background-color: rgb(255, 255, 255);
+    color: rgb(244, 189, 189);
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.completeButton{
+    background-color: rgb(21, 181, 31);
+}
+
+.deleteButton{
+    background-color: rgb(219, 33, 33);
+}
+
+.toDoItem{
+    padding: 0rem 0.5rem;
+}
