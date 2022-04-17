@@ -3,6 +3,7 @@ const toDoButton = document.querySelector(".toDoButton");
 const toDoList = document.querySelector(".toDoList");
 
 toDoButton.addEventListener("click", addToDo);
+toDoList.addEventListener("click", deleteCheck);
 
 function addToDo(event) {
   event.preventDefault();
@@ -28,4 +29,11 @@ function addToDo(event) {
   toDoList.appendChild(toDoDiv);
 
   toDoInput.value = "";
+}
+
+function deleteCheck(e) {
+  const item = e.target;
+  if (item.className === "deleteButton") {
+    item.parentElement.remove();
+  }
 }
