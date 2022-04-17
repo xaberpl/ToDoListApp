@@ -11,12 +11,26 @@
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700&family=Roboto&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/8ac3213b3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" class="style">
     <title>To Do List</title>
 </head>
 
 <body>
-
+    <header>
+        <h1>To Do List App</h1>
+    </header>
+    <form>
+        <input type="text" class="toDoInput">
+        <button class="toDoButton" type="submit">
+            <i class="fa-solid fa-square-plus"></i>
+        </button>
+    </form>
+    <div class="toDoContainer">
+        <ul class="toDoList"></ul>
+    </div>
 </body>
 
 </html>
