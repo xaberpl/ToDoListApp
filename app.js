@@ -32,8 +32,17 @@ function addToDo(event) {
 }
 
 function deleteCheck(e) {
+  console.log(e.target);
   const item = e.target;
   if (item.className === "deleteButton") {
-    item.parentElement.remove();
+    const toDo = item.parentElement;
+    toDo.classList.add("fall");
+    toDo.addEventListener("transitionend", function () {
+      toDo.remove();
+    });
+  }
+  if (item.classList[0] === "completeButton") {
+    const toDo = item.parentElement;
+    toDo.classList.toggle("completed");
   }
 }
