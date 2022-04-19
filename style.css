@@ -37,11 +37,12 @@ form button {
 
 form button {
   cursor: pointer;
-  color: #1cbab3;
+  color: #ffffff;
+  background-color: #10122e;
 }
 
 form button:hover {
-  background-color: white;
+  background: white;
   color: #10122e;
 }
 
@@ -138,9 +139,9 @@ select {
 
 select {
   color: #10122e;
-  width: 10rem;
   cursor: pointer;
-  padding: 1rem;
+  padding: 1.2rem;
+  min-width: 10vw;
 }
 
 .select::after {
@@ -149,7 +150,7 @@ select {
   background: #10122e;
   top: 0;
   right: 0;
-  padding: 1rem;
+  padding: 1.2rem;
   pointer-events: none;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
